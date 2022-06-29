@@ -25,7 +25,7 @@ console.log('Bubble sort time: ' + End + 'Milliseconds');
 
 // Dictionary:
 const start1 = new Date().getTime();
-const bubbleSort1 = (inputArr) => {
+export const bubbleSort1 = (inputArr) => {
     let len = inputArr.length;
     for (let i = 0; i < len; i++) {
         for (let j = 0; j < i; j++) {
@@ -41,21 +41,21 @@ const bubbleSort1 = (inputArr) => {
 
 
 
-let contain = []
-const dictionary = (word, mean) => {
-    let main = {
-        key: word,
-        value: mean
-    }
-    contain.push(main)
-    console.log(bubbleSort1(contain))
+//let contain = []
+//const dictionary = (word, mean) => {
+  //  let main = {
+    //    key: word,
+      //  value: mean
+   // }
+    //contain.push(main)
+    //console.log(bubbleSort1(contain))
 
-}
+//}
 
-dictionary("cube", "square box")
-dictionary("apple", "fruit")
-dictionary("america", "state")
-dictionary("ball", "ground")
+//dictionary("cube", "square box")
+//dictionary("apple", "fruit")
+//dictionary("america", "state")
+//dictionary("ball", "ground")
 let timeend = new Date().getTime();
 let Endtime = timeend - start1;
 console.log('Bubble sort time: ' + Endtime + 'Milliseconds');
